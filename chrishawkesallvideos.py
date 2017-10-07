@@ -226,9 +226,9 @@ print("\n")
 
 def my_keyword_argument_function(**kwargs): #keyword arguments which is a dictionary
 	if kwargs["name"] == "chris hawkes":
-		print("hello chris hawkes")
+		print("from the if statement kwargs[\"name\"] hello chris hawkes")
 	if kwargs["height"] == "6-1": #kwargs can be reassigned new values
-		kwargs["height"] = "6-3"
+		kwargs["height"] = "6-3" #if height 6-1, then change height to 6-3
 	print(kwargs)
 	print(type(kwargs))
 my_keyword_argument_function(name="chris hawkes", height="6-1") #return {'height': '6-3', 'name': 'chris hawkes'} \n <class 'dict'>
